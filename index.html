@@ -1,0 +1,84 @@
+<!-- Basic HTML Structure -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Disaster The Best</title>
+    </head>
+    <body>
+        <section class = 'header'>
+            <nav>
+                <div class = 'nav-links' id = "navLinks">
+                    <i class="fa fa-times" onclick = "hideMenu()"></i>
+                        <ul>
+                            <li><a href = "index.html">HOME</a></li>
+                            <li><a href = "#">ABOUT</a></li>
+                            <li><a href = "#">BUY</a></li>
+                            <li><a href = "#">INFO</a></li>
+                            <li><a href = "#">CONTACT</a></li>
+                        </ul>
+                </div>
+                <i class="fa fa-bars" onclick = "showMenu()"></i>
+            </nav>
+            <div class = 'text-box'>
+                <h1>Disaster's JS Always The Best</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolore in consequatur ad! <br>At ab quaerat cumque repellat provident illum!</p>
+                <a href = "#down" id = 'down' class = "hero-btn">Check The Media Below</a>
+            </div>
+        </section>
+
+        <!-- About Us Content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Check Out My Youtube Media</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus velit lectus, at tincidunt lacus semper in. Nullam a sem vel diam ultrices hendrerit eget sit amet elit. Aliquam volutpat risus at magna mollis, ornare suscipit risus ultricies. Proin tempor euismod tellus sit amet commodo. Etiam quis dictum metus, non luctus est. Donec non eros justo. Nulla nunc est, placerat eget efficitur ut, molestie luctus justo. Aliquam ac neque ullamcorper, tincidunt sapien tincidunt, posuere ipsum. Sed nibh tellus, ullamcorper ac lectus eu, feugiat luctus eros. Suspendisse nec egestas turpis, quis condimentum sapien. Aenean tempus vestibulum purus, nec pellentesque felis consequat sed.
+                    </p>
+                    <a href="" class = 'hero-btn red-btn'>EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AfuN0yvOeko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class = "footer">
+            <h4>About Us</h4>
+            <p>Semoga Anda Dapat Mempelajari Sesuatu Dalam Quiz Ini. Kita harap kita dapat melakukan yang lebih baik di masa hadapan. <br>Kami berharap anda dapat mempelajari sesuatu yang baru dengan menggunakan program kuiz kami.</p>
+            <div class="icons">
+                <ul>
+                <a href = "https://www.facebook.com/cho.chunwah" target="_blank"><i class = "fa fa-facebook"></i></a>
+                <i class = "fa fa-twitter"></i>
+                <a href = "https://www.instagram.com/pls_relax_bro/" target="_blank"><i class = "fa fa-instagram"></i></a>
+                <i class = "fa fa-linkedin"></i>
+                </ul>
+            </div>
+            <p>Made With <i class = "fa fa-heart-o"></i> By Ramly</p>
+        </section>
+
+
+
+
+        <!-- Javascript Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks"); 
+
+            function showMenu() 
+            {
+                navLinks.style.right = "0px";
+            }
+
+            function hideMenu() 
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
