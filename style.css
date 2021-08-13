@@ -197,6 +197,7 @@ nav .fa
 .about-col h1 
 {
     padding-top: 0;
+    font-size: 35px;
 }
 
 /* Paragaraph */
@@ -330,7 +331,7 @@ p
 
 .onetap
 {
-
+    font-size: 30px;
     width: 80%;
     margin: auto;
     text-align: center;
