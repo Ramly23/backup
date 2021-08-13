@@ -281,3 +281,75 @@ p
         flex-direction: column;
     }
 }
+
+.onetap
+{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Edit The Space */
+.onetap-col
+{
+    flex-basis: 23%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.onetap-col:hover 
+{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+}
+
+
+.onetap-col img 
+{
+    width: 100%;
+    display: block;
+}
+
+/* Background The Blue Background */ 
+.layer 
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+/* Hover Effects For The Background */
+.layer:hover 
+{
+    background: linear-gradient(to right, #FF9952BF, #FFAEAEBF);
+}
+
+/* Change The Texts */
+.layer h3 
+{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    font-size: 26px;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Hover Effect */
+.layer:hover h3 
+{
+    bottom: 47%;
+    opacity: 1;
+}
