@@ -272,14 +272,6 @@ p
     padding: 10px;
 }
 
-@media(max-width: 700px)
-{
-    /* Make The Header (Text Smaller) */
-    .text-box1 h1
-    {
-        font-size: 20px;
-    }
-}
 
 /* Header (Background Images) */
 .sub-header
@@ -324,6 +316,15 @@ p
     .row 
     {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 700px)
+{
+    /* Make The Header (Text Smaller) */
+    .text-box1 h1
+    {
+        font-size: 20px;
     }
 }
 
