@@ -10,7 +10,7 @@
 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -170,7 +170,7 @@ nav .fa
     .nav-links ul 
     {
         padding: 30px;
-        margin-left: 25px;
+        text-align: center;
     }
 
     iframe
@@ -280,7 +280,7 @@ p
 {
     min-height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -531,20 +531,12 @@ hr
     margin: auto;
     transition: 0.5s;
     border-radius: 8px;
-    transform: translateX(-30%);
    }
 
    /* Hover Effects */
    .nav-links ul li:hover::after 
    {
-    width: 63%;
+    width: 50%;
    }
 
-/* Style For Links (Colors) */
-   .nav-links ul li a { 
-   color: #fff;
-   text-decoration: none; 
-   font-size: 13px; 
-   text-align: center;
-   }
 }
