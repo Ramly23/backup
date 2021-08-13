@@ -535,6 +535,6 @@ hr
    /* Hover Effects */
    .nav-links ul li:hover::after 
    {
-    width: 100%;
+    width: 80%;
    }
 }
