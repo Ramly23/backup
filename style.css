@@ -170,6 +170,7 @@ nav .fa
     .nav-links ul 
     {
         padding: 30px;
+        margin-left: 16px;
     }
 
     iframe
