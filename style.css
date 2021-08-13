@@ -537,6 +537,7 @@ hr
    .nav-links ul li:hover::after 
    {
     width: 63%;
+    transform: translateX(-20%);
    }
 
    /* Style For Links (Colors) */
