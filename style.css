@@ -248,6 +248,15 @@ iframe:hover
     padding: 18px 0;
 }
 
+/* Icons */
+.icons .fab
+{
+    color: #FF9952;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
 .fa-heart-o 
 {
     color: #FF9952;
