@@ -536,7 +536,7 @@ hr
    /* Hover Effects */
    .nav-links ul li:hover::after 
    {
-    width: 60%;
+    width: 63%;
    }
 
    /* Style For Links (Colors) */
@@ -545,6 +545,6 @@ hr
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    translate: transformX(50%);
+    translate: transformX(100%);
    }
 }
