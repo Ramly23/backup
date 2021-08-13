@@ -531,21 +531,12 @@ hr
     margin: auto;
     transition: 0.5s;
     border-radius: 8px;
-    transform: translateX(-20%);
+    transform: translateX(-30%);
    }
 
    /* Hover Effects */
    .nav-links ul li:hover::after 
    {
     width: 63%;
-   }
-
-   /* Style For Links (Colors) */
-   .nav-links ul li a 
-   {   
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-    translate: transformX(150%);
    }
 }
