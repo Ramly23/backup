@@ -531,13 +531,13 @@ hr
     margin: auto;
     transition: 0.5s;
     border-radius: 8px;
+    transform: translateX(-20%);
    }
 
    /* Hover Effects */
    .nav-links ul li:hover::after 
    {
     width: 63%;
-    transform: translateX(-20%);
    }
 
    /* Style For Links (Colors) */
