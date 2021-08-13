@@ -170,7 +170,7 @@ nav .fa
     .nav-links ul 
     {
         padding: 30px;
-        margin-left: 32px;
+        margin-left: 28px;
     }
 
     iframe
@@ -531,7 +531,7 @@ hr
     margin: auto;
     transition: 0.5s;
     border-radius: 8px;
-    transform: translateX(-30%);
+    transform: translateX(-35%);
    }
 
    /* Hover Effects */
