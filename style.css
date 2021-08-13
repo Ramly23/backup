@@ -517,3 +517,24 @@ hr
 {
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
+
+@media(max-width: 700px)
+{
+   .nav-links ul li::after 
+   {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #f26682;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 8px;
+   }
+
+   /* Hover Effects */
+   .nav-links ul li:hover::after 
+   {
+    width: 100%;
+   }
+}
