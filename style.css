@@ -272,6 +272,42 @@ p
     padding: 10px;
 }
 
+/* Header (Background Images) */
+.sub-header
+{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-box1
+{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    text-align: center;
+    
+}
+/* Title */
+.text-box1 h1 
+{
+    font-size: 62px;
+}
+
+/* Paragraph */
+.text-box1 p 
+{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
 /* Smaller Screen Devices For Second Part */
 @media(max-width: 700px)
 {
