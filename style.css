@@ -328,7 +328,7 @@ p
 }
 
 /* Smaller Screen Devices For Second Part */
-@media(max-width: 63.9375em)
+@media(max-width: 700px)
 {
     /* Make The Columns Vertical */
     .row 
@@ -356,7 +356,7 @@ p
     padding-top: 50px;
 }
 
-@media (max-width: 63.9375em)
+@media (max-width: 700px)
 {
     .onetap
     {
@@ -548,7 +548,7 @@ hr
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 
-@media(max-width: 63.9375em)
+@media(max-width: 700px)
 {
    .nav-links ul li::after 
    {
