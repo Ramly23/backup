@@ -29,6 +29,9 @@ nav
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* Style Links */
@@ -128,7 +131,59 @@ nav .fa
 }
 
 /* Make Smaller Screens (Phones) */
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
+{
+    /* Make The Header (Text Smaller) */
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+
+    /* Redesign The Navigation For Smaller Screen */
+    .nav-links ul li 
+    {
+        display: block;
+    }
+
+    /* Make The Red Bar From The Right Side */
+    .nav-links 
+    {
+        position: fixed;
+        background: linear-gradient(to right, #FF9952, #FFAEAE);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    /* Make The Button Visible When Smaller Screen */
+    nav .fa 
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    /* Make The Links Have Some Space */
+    .nav-links ul 
+    {
+        padding: 30px;
+        text-align: center;
+    }
+
+    iframe
+    {
+        width: 315px;
+    }
+}
+
+/* Make Smaller Screens (Phones) */
+@media(min-width: 64em)
 {
     /* Make The Header (Text Smaller) */
     .text-box h1
@@ -312,7 +367,7 @@ p
 }
 
 /* Smaller Screen Devices For Second Part */
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
 {
     /* Make The Columns Vertical */
     .row 
@@ -321,7 +376,7 @@ p
     }
 }
 
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
 {
     /* Make The Header (Text Smaller) */
     .text-box1 h1
@@ -329,6 +384,7 @@ p
         font-size: 20px;
     }
 }
+
 
 .onetap
 {
@@ -339,6 +395,18 @@ p
     padding-top: 50px;
 }
 
+@media (max-width: 63.9375em)
+{
+    .onetap
+    {
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    }
+
+}
 /* Edit The Space */
 .onetap-col
 {
@@ -519,7 +587,7 @@ hr
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
 {
    .nav-links ul li::after 
    {
