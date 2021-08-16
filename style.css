@@ -5,16 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header (Background Images) */
-.header
-{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
+
 
 /* Scroll Behavior */
 html 
@@ -87,8 +78,8 @@ nav
     width: 100%;
 }
 
-/* Style All The Elements Inside Div */
-.text-box 
+/* Textbox */
+.text-box
 {
     width: 90%;
     color: #fff;
@@ -98,6 +89,49 @@ nav
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+    /* Header (Background Images)  */
+    .header
+    {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+
+    .full-img {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+
+    .full-img img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .full-img span {
+        top: 0;
+        right: 0;
+        position: absolute;
+        color: white;
+        padding: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+    
 
 /* Title */
 .text-box h1 
@@ -328,7 +362,7 @@ p
 }
 
 /* Smaller Screen Devices For Second Part */
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
 {
     /* Make The Columns Vertical */
     .row 
@@ -356,7 +390,7 @@ p
     padding-top: 50px;
 }
 
-@media (max-width: 700px)
+@media (max-width: 63.9375em)
 {
     .onetap
     {
@@ -391,23 +425,6 @@ p
     display: block;
 }
 
-/* Background The Blue Background */ 
-.layer 
-{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-/* Hover Effects For The Background */
-.layer:hover 
-{
-    background: linear-gradient(to right, #FF9952BF, #FFAEAEBF);
-}
 
 /* Change The Texts */
 .layer h3 
@@ -416,19 +433,19 @@ p
     font-weight: 500;
     bottom: 0;
     left: 50%;
-    color: #fff;
+    color: black;
     font-size: 26px;
-    transform: translateX(-50%);
     position: absolute;
-    opacity: 0;
     transition: 0.5s;
 }
 
-/* Hover Effect */
-.layer:hover h3 
-{
-    bottom: 47%;
-    opacity: 1;
+.text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(-0.8%);
+    text-decoration: underline;
 }
 
 .contact-us 
@@ -548,7 +565,7 @@ hr
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 
-@media(max-width: 700px)
+@media(max-width: 63.9375em)
 {
    .nav-links ul li::after 
    {
@@ -570,3 +587,128 @@ hr
 
 }
 
+
+
+.row1
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Edit The Space */
+.onetap-col1
+{
+    flex-basis: 23%;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+    transform: translateY(-200%);
+}
+
+.onetap-col1:hover 
+{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+}
+
+.onetap-col1 h3 {
+    font-size: 25px;
+    display: block;
+}
+
+.onetap hr {
+    position: relative;
+    bottom: 40px;
+}
+
+.features {
+    position: relative;
+    bottom: 50px;
+}
+@media (min-width: 1024px)
+{
+    .mobile {
+        display: none;
+    }
+
+    .layer {
+        display: none;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .left ul li h3 {
+        display: none;
+    }
+
+    .onetap br {
+        display: none;
+    }
+
+    .onetap hr {
+        display: none;
+    }
+
+    .features {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .sub-header .hero-btn {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .onetap-col img {
+        
+        border-radius: 16px;
+    }
+
+    .onetap-col1 h3{
+        display: none;
+    }
+
+    /* Background The Blue Background */ 
+    .layer 
+    {
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    /* Hover Effects For The Background */
+    .layer:hover 
+    {
+        background: linear-gradient(to right, #FF9952BF, #FFAEAEBF);
+    }
+
+    /* Change The Texts */
+    .layer h3 
+    {
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    font-size: 26px;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    }
+
+/* Hover Effect */
+.layer:hover h3 
+{
+    bottom: 47%;
+    opacity: 1;
+}
+
+}
