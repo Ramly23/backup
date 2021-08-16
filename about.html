@@ -39,41 +39,88 @@
             <h1>About Disaster JS</h1>
             <p>Disaster Js Have Four Section , Ragebot , Experimental AA , Visuals (Own Watermark And Also Indicator) And Also Misc. </p>
             <div class="row">
+                <div class="full-img" id = "fullImgBox">
+                    <img src="images/rage.png" id = "fullImg">
+                    <span onclick="closeFullImg()"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
                 <!-- First Div-->
                 <div class="onetap-col">
-                    <img src="images/rage.png">
+                    <img src="images/rage.png" onclick="openFullImg(this.src)" id = 'img'>
                     <div class="layer">
-                        <h3>Ragebot</h3>
+                        <h3>Rage</h3>
                     </div>
                 </div>
+                
+                
 
                 <!-- Second Div -->
                 <div class="onetap-col">
-                    <img src="images/aa.png">
+                    <img src="images/aa.png" onclick="openFullImg(this.src)" id = 'img'>
                     <div class="layer">
                         <h3>Anti-Aim</h3>
-                    </div>
+                    </div>  
                 </div>
+
+                
 
                 <!-- Third Div -->
                 <div class="onetap-col">
-                    <img src="images/visuals.png">
+                    <img src="images/visuals.png" onclick="openFullImg(this.src)" id = 'img'>
                     <div class="layer">
                         <h3>Visuals</h3>
                     </div>
                 </div>
 
+               
+                    
+
                 <!-- Third Div -->
                 <div class="onetap-col">
-                    <img src="images/misc.png">
+                    <img src="images/misc.png" onclick="openFullImg(this.src)">
                     <div class="layer">
                         <h3>Misc</h3>
                     </div>
                 </div>
 
+                
             </div>
+            <div class="row1">
+               
+                    <div class="onetap-col1">
+                        
+                        <h3>Ragebot</h3>
+                        
+                    </div>
+
+                    <div class="onetap-col1">
+                        
+                        
+                        <h3>Anti-Aim</h3>
+                        
+                        
+                    </div>
+
+                    <div class="onetap-col1">
+                        
+                        
+                        <h3>Visuals</h3>
+                        
+                        
+                    </div>
+
+                    <div class="onetap-col1">
+                        
+                        
+                        <h3>Misc</h3>
+                        
+                    </div>
+                
+            </div>
+
+            <br>
+            <hr>
         </section>
-        
+
         <!-- Features -->
         <section class = "features">
             <h1>Details For The Javascript</h1>
@@ -142,18 +189,7 @@
 
 
         <!-- Javascript Toggle Menu -->
-        <script>
-            var navLinks = document.getElementById("navLinks"); 
-
-            function showMenu() 
-            {
-                navLinks.style.right = "0px";
-            }
-
-            function hideMenu() 
-            {
-                navLinks.style.right = "-200px";
-            }
+        <script src = 'script.js'>
         </script>
     </body>
 </html>
