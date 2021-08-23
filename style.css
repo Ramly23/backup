@@ -923,5 +923,7 @@ nav
         top: 170px;
     }
 
-
+    .buy-footer {
+        bottom: -550px;
+    }
 }
