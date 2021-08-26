@@ -154,8 +154,8 @@ nav {
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    position: absolute;
-    bottom: -660px;
+    position: relative;
+    bottom: -400px;
 } 
 
 .footer h4 {
@@ -183,8 +183,8 @@ nav {
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    position: absolute;
-    bottom: -1500px;
+    position: relative;
+    bottom: -400px;
 } 
 
 .about-footer h4 {
@@ -374,4 +374,16 @@ nav {
 .button-align {
     position: relative;
     top: 25px;
+}
+
+@media(min-width:768px) {
+    .hide-for-desktop {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .hide-for-mobile {
+        display: none;
+    }
 }
