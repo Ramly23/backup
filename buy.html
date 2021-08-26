@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/21bf2f8b90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disaster JS</title>
 </head>
 <body>
-    <header class = 'header'>
-        <nav class = 'nav-links hide-for-mobile'>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="buy.html">Buy</a></li>
-            </ul>
+    <header>
+        <nav class = 'nav-links'>
+            <div class="flex">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="main">
-            <h1>Disaster's JS Always The Best</h1>
-            <p>Disaster JS Will Definitely Enchance Your HvH Experiences, The Javascript Have A Tons Of New Stuff That Other
-                Javascript Dont Have! Make Sure To Check It Out !!</p>
-            <a href = "#down" id = "down" class = "btn">About The Prices</a>
-            <hr>
-        </div>
-
-        <!-- Hamburger Menu -->
-        <a id="btnHamburger" href="#" class= "header__toggle hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-
-        <div class="header__menu has-fade mobile-links hide-for-desktop">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="buy.html">Buy</a></li>
-            </ul>
-        </div>
     </header>
 
     <section>
-        <div class="price">
-            <h1>Prices</h1>
-            <p>This Are All The Prices For Our Javascript. No Refund After Purchase.</p>
-        </div>
+        <div class="flex">
+            <div class="first-section">
+                <div class="flex h1-align">
+                    <h1>Disaster's JS Always The Best</h1>
+                </div>
 
-        <div class="buy-row">
-            <div class="buy-col">
-                <h3>Disaster JS</h3>
-                <p>- Lifetime Access<br>
-                   - $10</p>
-            </div>
+                <div class="flex p-align">
+                    <p>Disaster JS Will Definitely Enchance Your HvH Experiences, The Javascript Have A Tons<br>Of New Stuff That Other Javascript Dont Have! Make Sure To Check It Out !!</p>
+                </div>
 
-            <div class="buy-col">
-                <h3>Disaster JS (With Source Code)</h3>
-                <p>- Lifetime Access<br>
-                    - Source Code<br>
-                    - $500<br></p>
-                <a href="https://shoppy.gg/@Ramly" target="_blank" class = 'btn'>BUY NOW</a>
+                <div class="flex">
+                    <a href = "#down" id = "down" class = "button">About The Price</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class = "buy-footer">
+    <section>
+        <div class="flex">
+            <div class="second-section">
+                <div class="flex h3-align">
+                    <h3>Prices For The JS</h3>
+                </div>
+
+                <div class="flex p-align">
+                    <p>This Are All The Prices For Our Javascript. No Refund After Purchase.</p>
+                </div>
+
+                <div class="row">
+                    <div class="buy-col">
+                        <h3>Disaster JS</h3>
+                        <p>- Lifetime Access<br>
+                        - $10</p>
+                    </div>
+
+                    <div class="buy-col">
+                        <h3>Disaster JS (With Source Code)</h3>
+                        <p>- Lifetime Access<br>
+                        - Source Code<br>
+                        - $500<br></p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <a href="https://shoppy.gg/@Ramly" target="_blank" class = 'button button-align'>BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class = "footer">
         <hr>
             <div class="footer-text">
             <h4>About Us</h4>
@@ -90,7 +93,6 @@
                 <p>Website <i class = "fa fa-heart-o"></i> By Ramly</p>
             </div>
     </section>
-
 
     <script src = 'script.js'></script>
 </body>
