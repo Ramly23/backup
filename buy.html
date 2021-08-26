@@ -13,8 +13,9 @@
     <title>Disaster JS</title>
 </head>
 <body>
-    <header class = 'hide-for-mobile'>
-        <nav class = 'nav-links'>
+    <!-- Desktop -->
+    <header class = 'header'>
+        <nav class = 'nav-links hide-for-mobile'>
             <div class="flex">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,9 +24,24 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Hamburger Menu -->
+        <a id="btnHamburger" href="#" class= "header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div class="header__menu has-fade mobile-links hide-for-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy.html">Buy</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class = 'hide-for-mobile'>
+    <section>
         <div class="flex">
             <div class="first-section">
                 <div class="flex h1-align">
@@ -43,7 +59,7 @@
         </div>
     </section>
 
-    <section class = 'hide-for-mobile'>
+    <section>
         <div class="flex">
             <div class="second-section">
                 <div class="flex h3-align">
@@ -77,7 +93,7 @@
     </section>
 
     <!-- Footer -->
-    <section class = "footer hide-for-mobile">
+    <section class = "footer">
         <hr>
             <div class="footer-text">
             <h4>About Us</h4>

@@ -14,8 +14,8 @@
 </head>
 <body>
     <!-- Desktop -->
-    <header class = 'hide-for-mobile'>
-        <nav class = 'nav-links'>
+    <header class = 'header'>
+        <nav class = 'nav-links hide-for-mobile'>
             <div class="flex">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,9 +24,24 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Hamburger Menu -->
+        <a id="btnHamburger" href="#" class= "header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div class="header__menu has-fade mobile-links hide-for-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy.html">Buy</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class = 'hide-for-mobile'>
+    <section>
         <div class="flex">
             <div class="first-section">
                 <div class="flex h1-align">
@@ -44,8 +59,8 @@
         </div>
     </section>
 
-    <section class = 'hide-for-mobile'>
-        <div class="flex">
+    <section>
+        <div class="flex hide-for-mobile">
             <div class="second-section">
                 <div class="flex h3-align">
                     <h3>Check Out My Youtube Media</h3>
@@ -73,8 +88,33 @@
         </div>
     </section>
 
+    <!-- Mobile -->
+    <section class = 'hide-for-desktop'>
+        <div class="flex">
+            <div class="first-section-mobile">
+                <div class="flex h3-align">
+                    <h3>Check Out My Youtube Media</h3>
+                </div>
+
+                <div class="flex p-align">
+                    <p>My Youtube Channel Contains A Lot Of Medias About HvH. I Hope You Guys Will Check It Out And I Really Appreciate If You Watch The Whole Videos.
+                        Make Sure To Subscribe , Like , Comment And Open The Notifications And You Will Receive Latest Videos
+                        Notifications Instantly<br>When I Updates It.</p>
+                </div>
+
+                <div class="flex">
+                    <iframe width="560" class = 'first-video' height="315" src="https://www.youtube.com/embed/p4lUhNFdCkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="flex">
+                    <iframe width="560" height="315" class = 'second-video-mobile' src="https://www.youtube.com/embed/AfuN0yvOeko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <section class = "footer hide-for-mobile">
+    <section class = "footer">
         <hr>
             <div class="footer-text">
             <h4>About Us</h4>
